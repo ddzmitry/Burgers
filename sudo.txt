@@ -1,0 +1,16 @@
+I am trying to create game that will let you order burger if you have enough money ,
+if not then you have to wash dish to get money and then buy burger,
+eat it and empty dish will show.
+
+Need 3 Tables 
+-burger
+-dishes
+-money
+
+Need 3 routers
+
+
+Need one ORM
+
+Need to figure out how to render myltible objects on one call
+in handlebars

@@ -1,0 +1,48 @@
+<div class="container-fluid text-center">
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3"> Burger Eaters</h1>
+            <p class="lead">CreateEnjoy🍔 </p>
+        </div>
+    </div>
+
+
+
+    {{#each burgers}} {{#unless this.devoured}}
+
+
+   <p>  {{this.burger_name}} {{this.id}} </p>
+    <form action="/{{this.id}}?_method=PUT" method="POST">
+        <input type="hidden" name="eatten" value="1">
+        <button  id="eatBurger" "type="submit ">Eat that burger</button>
+             </form>
+             
+             <form action="/{{this.id}}?_method=DELETE" method="POST">
+
+            <input type="hidden" name="id" value="{{this.id}}">
+            <button id="sendBack" type="submit ">Send it back!</button>
+        </form>
+
+        <br><br>
+
+                    {{/unless}}
+
+
+                    
+          {{#if this.devoured}}  
+           
+       
+            {{this.burger_name}} {{this.id}} 
+            <p>Have been eatten</p>
+            {{/if}}
+    {{/each}}
+
+<form class="create-update-form" action="/" method="POST">
+    <div class="form-group">
+        <label for="burger ">Burger Name:</label>
+        <input type="text "id="burger" name="name">
+    </div>
+    <button id="addBurger" type="submit">Order Burger</button>
+</form>
+</div>

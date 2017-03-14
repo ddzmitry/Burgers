@@ -1,0 +1,34 @@
+{
+    "name": "eat_that_burger",
+    "version": "1.0.0",
+    "description": "SQL,Node.js,MVC Express app",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ddzmitry/Burgers.git"
+    },
+    "keywords": [
+        "Burgers",
+        "SQL",
+        "Node",
+        "Express",
+        "MVC"
+    ],
+    "author": "Dzmitry A Dubarau",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ddzmitry/Burgers/issues"
+    },
+    "homepage": "https://github.com/ddzmitry/Burgers#readme",
+    "dependencies": {
+        "body-parser": "^1.17.1",
+        "bootstrap": "^3.3.7",
+        "express": "^4.15.2",
+        "express-handlebars": "^3.0.0",
+        "method-override": "^2.3.7"
+    }
+}
