@@ -1,12 +1,27 @@
 const mysql = require("mysql");
+//to deploy on JAWS DB
+var connection; 
 
-const connection = mysql.createConnection({
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+
+connection = mysql.createConnection({
     port: 3306,
     host: "localhost",
     user: "root",
     password: "hehehehe!",
     database: "burgers_db"
 });
+
+}
+
+
+
+
+
+
+
 
 // Make connection to burger_db.
 connection.connect(function(err) {
