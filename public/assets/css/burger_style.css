@@ -1,0 +1,183 @@
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.allDivs {
+    margin: 0 auto 0 auto;
+}
+
+html {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url('http://wallpaper-gallery.net/images/glow-in-the-dark-wallpapers/glow-in-the-dark-wallpapers-8.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    /*overflow-y: hidden;*/
+    overflow-x: hidden;
+}
+
+.burgers {
+    position: inherit
+}
+
+.readytoeat {
+    background-image: url('http://vignette3.wikia.nocookie.net/battlefordreamislandfanfiction/images/9/99/Burger_Pose.png/revision/latest?cb=20130710205133');
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    /*height: 115px;*/
+    transition: 2s ease all;
+    width: 300px;
+    height: 109px;
+}
+
+.readytoeat:hover {
+    background-position: left;
+}
+
+.devoured {
+    /*background-image: url('https://media.giphy.com/media/ikF3Fbgb3zjqM/giphy.gif');*/
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 300px;
+    height: 109px;
+    /*background-size: 250px 250px;*/
+    background-position: right 35px bottom -50;
+    /*padding: 15px;
+    height: 115px;*/
+    transition: 2s ease all;
+}
+
+.devoured:hover {
+    /*background-image: url('https://media.giphy.com/media/ikF3Fbgb3zjqM/giphy.gif');*/
+    background-repeat: no-repeat;
+    /*background-position: right 55px bottom -250px;*/
+    /*padding: 15px;
+    height: 115px;*/
+    background-position: bottom;
+}
+
+.jumbotron {
+    background-image: url("https://c2.sfdcstatic.com/content/dam/blogs/us/thumbnails/think-multimodal-it-dot-dot-dot-not-bimodal/The_benefits_of_working_in_information_technology_editor_s_choice.jpg");
+    background-size: cover;
+    opacity: 1;
+}
+
+.jumbotron {
+    width: auto;
+    margin-top: 50px;
+    font-size: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+    /* set the background image */
+    background: url(http://7-themes.com/data_images/collection/3/4442674-black-wallpapers.png);
+    background-position: bottom;
+    background-size: cover;
+    /* set the transition speed */
+    transition: 2s ease all;
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron:hover {
+    background-position: top;
+}
+
+.neon {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: normal;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.neon:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+}
+
+.burgerToEat {
+    font-family: 'VT323', monospace;
+    font-size: 23px;
+    margin: -12px 0 10px;
+}
+
+#eatBurger {
+    border-radius: 50%;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    background: none;
+}
+
+#sendBack {
+    border-radius: 50%;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    margin-top: 5px;
+    background: none;
+}
+
+#sendBack:hover {
+    color: #d76f5f;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+#eatBurger:hover {
+    color: #ef3a1f;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+.wasted {
+    -ms-transform: rotate(7deg);
+    /* IE 9 */
+    -webkit-transform: rotate(7deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+    margin-top: 2px;
+    font-family: 'Frijole', cursive;
+    color: red;
+    font-size: 40px;
+}
+
+.containerOrder {
+    font: normal 30px/normal "Warnes", Helvetica, sans-serif;
+    margin: 0 auto;
+    color: white;
+}
+
+.input {
+    width: 30%;
+    margin: 0 auto;
+    transition: 2s ease all;
+}
+
+.input:hover {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #dad0eb;
+    border-radius: 3px;
+}

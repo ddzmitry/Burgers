@@ -33,12 +33,12 @@ $(document).ready(function() {
     //destroy button
 
     $(document).on('click', '#sendBack', () => {
-            console.log('hello')
+
             InjectAudio('ramsey.mp3')
         })
         // eat burger 
     $(document).on('click', '#eatBurger', () => {
-        console.log('hello')
+
         InjectAudio('delicious.mp3')
     })
 
@@ -53,14 +53,43 @@ $(document).ready(function() {
 
 
 
+    $('.wasted').each(function() {
+        // console.log($(this))
+        $(this).animateCss('flipInY');
+    })
 
-    // if (burger == '') {
 
-    //     $('#addBurger').attr("disabled", true);
-    // } else {
+    $('.devoured').each(function(element) {
 
-    //     $('#addBurger').removeAttr()
-    // }
+        var elementToUpdate = $(this)
+        SetBackground(element, function(data) {
+            // console.log(data)
+            elementToUpdate.css("background-image", `url('${data}')`)
+        })
+
+    })
+
 
 
 });
+
+
+//main AJAX call
+function SetBackground(div, cb) {
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=ramsay%chef/&api_key=dc6zaTOxFJmzC&limit=100";
+    $.ajax({
+        url: queryURL,
+        method: 'GET'
+    }).done(function(response) {
+
+        // console.log(response.data);
+        var random = Math.floor(Math.random() * response.data.length)
+            // console.log(random)
+            // console.log(response.data[`${random}`].images.original.url)
+        var data = response.data[`${random}`].images.original.url
+        cb(data)
+            // ["0"].images.original.url
+            // div.css("background-image", "url(`${response.data[`${random}`].images.original.url}`)");
+    });
+
+}

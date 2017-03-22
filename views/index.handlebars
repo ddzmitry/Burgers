@@ -1,48 +1,67 @@
+
+<link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+
+
+
+
 <div class="container-fluid text-center">
 
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-3"> Burger Eaters</h1>
-            <p class="lead">CreateEnjoy🍔 </p>
+        <div class=" container">
+            <h1 class=" neon  display-3"> Burger Eaters 🍔</h1>
         </div>
     </div>
 
-
-
     {{#each burgers}} {{#unless this.devoured}}
 
+       
+                  <div class = " readytoeat thumbnail col-sm-6 col-md-3">
+        
+     
+   <p class="burgerToEat">  {{this.burger_name}} 🍔 </p>
 
-   <p>  {{this.burger_name}} {{this.id}} </p>
     <form action="/{{this.id}}?_method=PUT" method="POST">
         <input type="hidden" name="eatten" value="1">
-        <button  id="eatBurger" "type="submit ">Eat that burger</button>
+        <button  id="eatBurger" "type="submit ">Eat</button>
              </form>
              
              <form action="/{{this.id}}?_method=DELETE" method="POST">
 
             <input type="hidden" name="id" value="{{this.id}}">
-            <button id="sendBack" type="submit ">Send it back!</button>
+            <button id="sendBack" type="submit ">Destroy</button>
         </form>
-
-        <br><br>
+</div>
+ 
 
                     {{/unless}}
 
 
                     
           {{#if this.devoured}}  
-           
-       
-            {{this.burger_name}} {{this.id}} 
-            <p>Have been eatten</p>
+          
+        <div class = "devoured thumbnail col-sm-6 col-md-3 ">  
+
+            
+            <p class="wasted" >EATEN</p>
+            
+        </div>
             {{/if}}
     {{/each}}
 
+
+
+
+</div>
+
+<div class="row text-center containerOrder">
 <form class="create-update-form" action="/" method="POST">
     <div class="form-group">
         <label for="burger ">Burger Name:</label>
-        <input type="text "id="burger" name="name">
+        <input type="text "id="burger" class="form-control input"   name="name" placeholder="Burger Name">
     </div>
-    <button id="addBurger" type="submit">Order Burger</button>
+    <button class="btn btn-primary" id="addBurger" type="submit">Order Burger</button>
 </form>
+
 </div>
